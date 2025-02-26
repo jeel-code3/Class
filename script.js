@@ -26,3 +26,36 @@ function number(){
 	document.getElementById('error').innerHTML = error;
 
 }
+
+function testloop(){
+            for(let i=0; i < 3; i++){
+                if(i === 1){
+                    return (`The value of i is ${i}`);
+                }
+            }
+        }
+        document.write(testloop());
+        document.write(`<br><br>`);
+        function isPrime(num){
+            if(num <= 1){
+                return false;
+            }
+            for(let i=2; i<num; i++){
+                if(num % 2 ===0){
+                    return false;
+                }
+            }
+            return true;
+        }
+        for(let i=0; i<=10; i++){
+            if (i=== 0){
+                document.write(`${i} is zero<br><br>`);
+            }else if(i%2 === 0){
+                document.write(`${i} is an even number<br><br>`);
+            }else if(isPrime(i)){
+                document.write(`${i} is Prime number<br><br>`);
+            }
+            else{
+                document.write(`${i} is odd number<br><br>`)
+            }
+        }
